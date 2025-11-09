@@ -1,0 +1,20 @@
+@if (misDatos) {
+  <section class="sobre-mi-container">
+
+    <img [src]="misDatos.foto" alt="Foto de perfil de {{ misDatos.nombre }}">
+
+    <h1>{{ misDatos.nombre }}</h1>
+    <h2>{{ misDatos.titulo }} en {{ misDatos.Institucion }}</h2>
+
+    <p>{{ misDatos.descripcion }}</p>
+
+    <div class="links">
+      <a [href]="misDatos.linkedin" target="_blank">Mi LinkedIn</a>
+      <a [href]="misDatos.github" target="_blank">Mi GitHub</a>
+      <a [href]="'mailto:' + misDatos.email">Enviar Email</a>
+    </div>
+
+  </section>
+} @else {
+  <p>Cargando información...</p>
+}

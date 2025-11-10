@@ -1,1 +1,62 @@
-<p>contacto works!</p>
+<section class="container bg-dark text-white p-5 my-5 rounded-3 shadow-lg" aria-labelledby="contacto-heading">
+
+  <h2 class="display-5 fw-bold text-center mb-5" id="contacto-heading">
+    Contacto
+  </h2>
+
+  <div class="row g-5">
+    
+    <div class="col-lg-5">
+      <h3 class="text-info">Hablemos</h3>
+      <p>
+        Estoy disponible para oportunidades freelance o para unirme a tu equipo.
+        Si tienes un proyecto en mente o simplemente quieres saludar,
+        ¡no dudes en contactarme!
+      </p>
+      
+      @if (misDatos) {
+        <div class="mt-4">
+          <a [href]="'mailto:' + misDatos.email" class="btn btn-primary btn-lg d-block mb-3">
+            Envíame un Email
+          </a>
+          <a [href]="misDatos.linkedin" class="btn btn-outline-light btn-lg d-block mb-3" target="_blank" rel="noopener noreferrer">
+            Mi LinkedIn
+          </a>
+          <a [href]="misDatos.github" class="btn btn-outline-light btn-lg d-block" target="_blank" rel="noopener noreferrer">
+            Mi GitHub
+          </a>
+        </div>
+      } @else {
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Cargando...</span>
+        </div>
+      }
+    </div>
+
+    <div class="col-lg-7">
+      <h3 class="text-info">O envíame un mensaje directo</h3>
+      
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Tu Nombre</label>
+          <input type="text" class="form-control" id="nombre" formControlName="nombre" placeholder="Tu Nombre" required>
+        </div>
+        
+        <div class="mb-3">
+          <label for="email" class="form-label">Tu Email</label>
+          <input type="email" class="form-control" id="email" formControlName="email" placeholder="nombre@ejemplo.com" required>
+        </div>
+        
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" formControlName="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-lg" [disabled]="!contactForm.valid">
+          Enviar Mensaje
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

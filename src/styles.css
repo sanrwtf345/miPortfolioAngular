@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Esto le da a la etiqueta <body> (el fondo de todo)
+  un color gris muy claro.
+*/
+body {
+  background-color: #f8f9fa; /* Este es el color 'bg-light' de Bootstrap */
+}

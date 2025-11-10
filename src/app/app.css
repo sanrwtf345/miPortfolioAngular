@@ -1,0 +1,20 @@
+/* src/app/app.css */
+
+/* :host es el componente <app-root>.
+  Lo convertimos en un contenedor flex que ocupa el 100% de la altura 
+  de la pantalla (100vh) y ordena sus hijos (header, main, footer) en columna.
+*/
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*
+  Hacemos que <main> (el contenedor de tu <router-outlet>)
+  crezca para ocupar todo el espacio disponible.
+  Esto empuja al <footer> hacia el fondo de la página.
+*/
+main {
+  flex: 1; 
+}

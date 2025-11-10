@@ -1,20 +1,51 @@
 @if (misDatos) {
-  <section class="sobre-mi-container">
-
-    <img [src]="misDatos.foto" alt="Foto de perfil de {{ misDatos.nombre }}">
-
-    <h1>{{ misDatos.nombre }}</h1>
-    <h2>{{ misDatos.titulo }} en {{ misDatos.Institucion }}</h2>
-
-    <p>{{ misDatos.descripcion }}</p>
-
-    <div class="links">
-      <a [href]="misDatos.linkedin" target="_blank">Mi LinkedIn</a>
-      <a [href]="misDatos.github" target="_blank">Mi GitHub</a>
-      <a [href]="'mailto:' + misDatos.email">Enviar Email</a>
+  
+  <section class="container bg-dark text-white p-5 my-5 rounded-3 shadow-lg" aria-labelledby="perfil-heading">
+    
+    <div class="row align-items-center">
+      
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <img [src]="misDatos.foto" class="img-fluid rounded-circle shadow" alt="Foto de perfil de {{ misDatos.nombre }}" style="max-width: 250px;">
+      </div>
+      
+      <div class="col-lg-8">
+        
+        <h1 class="display-4 fw-bold" id="perfil-heading">
+          {{ misDatos.nombre }}
+        </h1>
+        
+        <h2 class="h4 text-info mb-4">
+          {{ misDatos.titulo }} en {{ misDatos.Institucion }}
+        </h2>
+        
+        <p class="lead">
+          {{ misDatos.descripcion }}
+        </p>
+        
+        <div class="d-flex flex-wrap gap-2 mt-4">
+          
+          <a [href]="misDatos.github" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer" aria-label="Ver mi perfil en GitHub (se abre en una pestaña nueva)">
+            GitHub
+          </a>
+          
+          <a [href]="misDatos.linkedin" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener noreferrer" aria-label="Ver mi perfil en LinkedIn (se abre en una pestaña nueva)">
+            LinkedIn
+          </a>
+          
+          <a [href]="'mailto:' + misDatos.email" class="btn btn-outline-light btn-lg">
+            Enviar Email
+          </a>
+        </div>
+        
+      </div>
     </div>
-
   </section>
+
 } @else {
-  <p>Cargando información...</p>
+
+  <div class="text-center p-5">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Cargando información...</span>
+    </div>
+  </div>
 }

@@ -1,0 +1,7 @@
+/* Le damos un borde sutil a la foto de perfil,
+  usando un color de Bootstrap (info) que
+  coincide con el texto del título (h2).
+*/
+.rounded-circle {
+  border: 4px solid var(--bs-info);
+}

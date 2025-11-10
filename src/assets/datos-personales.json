@@ -1,12 +1,12 @@
 
 {	
-  "nombre": "tu nombre",
+  "nombre": "Santiago Romero",
   "titulo": "Estudiante de Desarrollo de Software",
   "Institucion": "IES 63", 
   "descripcion": "....",
   "foto": "assets/img/foto-perfil.jpg",
-  "email": "mail@example.com",
+  "email": "sanromcast@gmail.com",
   "telefono": "+54 9 3482 5555555",
-  "linkedin": "https://linkedin.com/in/...",
-  "github": "https://github.com/..."
+  "linkedin": "https://linkedin.com/in/sanromcast",
+  "github": "https://github.com/sanrwtf345"
 }

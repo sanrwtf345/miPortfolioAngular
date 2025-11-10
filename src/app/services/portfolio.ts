@@ -12,7 +12,7 @@ import { Proyecto } from '../models/proyecto';
 export class PortfolioService {
 
   // 2. Definimos las rutas a tus archivos JSON
-  private urlDatosPersonales: string = 'miPortfolioAngular\src\assets\datos-personales.json';
+  private urlDatosPersonales: string = 'assets/datos-personales.json';
   private urlProyectos: string = 'assets/proyectos.json';
 
   // 3. Inyectamos HttpClient para poder usarlo [cite: 1056]

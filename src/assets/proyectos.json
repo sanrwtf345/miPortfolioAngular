@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "proyecto": "Gestor de Tareas",
+    "proyecto": "Gestor de reparacion de pcs",
     "descripcion": "Aplicación CRUD con Java y JSP.",
     "tecnologias": ["Java", "Spring", "MySQL"],
-    "linkRepositorio": "https://github.com/...",
-	"asignatura": "...",
-	"docente": "..."
+    "linkRepositorio": "https://github.com/sanrwtf345/proyecto_reparacion.git",
+	"asignatura": "Programacion I",
+	"docente": "Analia Casali"
 
 },
   {
@@ -14,8 +14,8 @@
     "nombre": "Portfolio Angular",
     "descripcion": "Sitio web personal desarrollado con Angular 20.",
     "tecnologias": ["Angular", "TypeScript"],
-    "linkRepositorio": "https://github.com/...",
-	"asignatura": "...",
-	"docente": "..."
+    "linkRepositorio": "https://github.com/sanrwtf345/miPortfolioAngular.git",
+	"asignatura": "Programacion II",
+	"docente": "Analia Casali"
   }
 ]

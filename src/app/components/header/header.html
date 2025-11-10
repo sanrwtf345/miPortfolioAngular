@@ -1,8 +1,29 @@
-<nav>
-  <ul>
-    <li><a routerLink="/inicio">Inicio</a></li>
-    <li><a routerLink="/sobremi">Sobre Mí</a></li>
-    <li><a routerLink="/misproyectos">Proyectos</a></li>
-    <li><a routerLink="/contacto">Contacto</a></li>
-  </ul>
-</nav>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Navegación principal">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" routerLink="/inicio">Santiago Romero</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/inicio" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" aria-current="page">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/sobremi" routerLinkActive="active" aria-current="page">Sobre Mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/misproyectos" routerLinkActive="active" aria-current="page">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contacto" routerLinkActive="active" aria-current="page">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

@@ -3,7 +3,7 @@
     "id": 1,
     "proyecto": "Gestor de reparacion de pcs",
     "descripcion": "Aplicación CRUD con Java y JSP.",
-    "tecnologias": ["Java", "Spring", "MySQL"],
+    "tecnologias": ["Java", "Maven", "MySQL"],
     "linkRepositorio": "https://github.com/sanrwtf345/proyecto_reparacion.git",
 	"asignatura": "Programacion I",
 	"docente": "Analia Casali"

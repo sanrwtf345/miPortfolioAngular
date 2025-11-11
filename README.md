@@ -25,9 +25,10 @@ Variables de Entorno (Environments): Para gestionar las URLs de los JSON.
 WCAG/ARIA: Pautas de accesibilidad implementadas en todo el sitio para la navegación semántica.
 
 Capturas de Pantalla
-
-
-
+<img width="1919" height="950" alt="Captura de pantalla 2025-11-11 195202" src="https://github.com/user-attachments/assets/17527919-0e30-40e0-9c0e-23bfd2804d10" />
+<img width="1919" height="949" alt="Captura de pantalla 2025-11-11 195214" src="https://github.com/user-attachments/assets/190aa8be-e856-40f7-8266-249b613a8e3f" />
+<img width="1917" height="952" alt="Captura de pantalla 2025-11-11 195224" src="https://github.com/user-attachments/assets/c94f8e23-5f5f-40a6-96ba-963e0ff773ad" />
+<img width="1917" height="944" alt="Captura de pantalla 2025-11-11 195237" src="https://github.com/user-attachments/assets/ca894997-eb65-42ba-ae06-f53cf33d93e3" />
 
 
 Instrucciones para Ejecutar el Proyecto

@@ -1,59 +1,70 @@
-# MiPortfolioAngular
+Portfolio Personal con Angular 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
+Este es un proyecto de portfolio web desarrollado como una Aplicación de Una Sola Página utilizando el framework Angular. El sitio muestra mi información personal, mis habilidades técnicas y un listado de proyectos que he realizado.
 
-## Development server
+La aplicación sigue las prácticas modernas de Angular, utilizando componentes standalone, un servicio centralizado para la gestión de datos y carga la información de manera asíncrona desde archivos JSON locales, simulando una llamada a una API.
 
-To start a local development server, run:
+Tecnologías Utilizadas
 
-```bash
-ng serve
-```
+Angular (v17+): Framework principal para la construcción de la SPA.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+TypeScript: Lenguaje principal para toda la lógica de la aplicación.
 
-## Code scaffolding
+Componentes Standalone: Arquitectura moderna de Angular para componentes desacoplados.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Angular Router: Para la navegación entre las distintas secciones del sitio.
 
-```bash
-ng generate component component-name
-```
+Angular Reactive Forms: Para la validación y gestión del formulario de contacto.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+HttpClient: Para consumir datos de archivos JSON locales.
 
-```bash
-ng generate --help
-```
+Bootstrap 5: Para el diseño responsive y la estilización de componentes (Nav, Cards, Carrusel).
 
-## Building
+Variables de Entorno (Environments): Para gestionar las URLs de los JSON.
 
-To build the project run:
+WCAG/ARIA: Pautas de accesibilidad implementadas en todo el sitio para la navegación semántica.
 
-```bash
-ng build
-```
+Capturas de Pantalla
+<img width="1919" height="950" alt="Captura de pantalla 2025-11-11 195202" src="https://github.com/user-attachments/assets/17527919-0e30-40e0-9c0e-23bfd2804d10" />
+<img width="1919" height="949" alt="Captura de pantalla 2025-11-11 195214" src="https://github.com/user-attachments/assets/190aa8be-e856-40f7-8266-249b613a8e3f" />
+<img width="1917" height="952" alt="Captura de pantalla 2025-11-11 195224" src="https://github.com/user-attachments/assets/c94f8e23-5f5f-40a6-96ba-963e0ff773ad" />
+<img width="1917" height="944" alt="Captura de pantalla 2025-11-11 195237" src="https://github.com/user-attachments/assets/ca894997-eb65-42ba-ae06-f53cf33d93e3" />
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
+Instrucciones para Ejecutar el Proyecto
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Sigue estos pasos para ejecutar el proyecto en tu máquina local.
 
-```bash
-ng test
-```
+Prerrequisitos
 
-## Running end-to-end tests
+Asegúrate de tener instalado Node.js (que incluye npm) y el Angular CLI de forma global.
 
-For end-to-end (e2e) testing, run:
+# Instalar Angular CLI (si no lo tienes)
+npm install -g @angular/cli
 
-```bash
-ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Pasos
 
-## Additional Resources
+Clonar el Repositorio
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone https://github.com/sanrwtf345/miPortfolioAngular.git
+
+
+Navegar a la Carpeta del Proyecto
+
+cd miPortfolioAngular
+
+
+Instalar Dependencias
+Este comando leerá el archivo package.json e instalará todas las librerías necesarias (Angular, Bootstrap, etc.).
+
+npm install
+
+
+Ejecutar el Servidor de Desarrollo
+Este comando compila la aplicación y la levanta en un servidor local.
+
+ng serve -o
+
+
+La opción -o (o --open) abrirá automáticamente tu navegador en http://localhost:4200/.

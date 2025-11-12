@@ -1,6 +1,6 @@
 export interface Proyecto {
   id: number;
-  proyecto: string; // Tu JSON usa "proyecto"
+  proyecto: string; 
   descripcion: string;
   tecnologias: string[];
   linkRepositorio: string;

@@ -2,30 +2,32 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-// 1. Importamos las interfaces que creamos
+// 1. Importamos las interfaces
 import { DatosPersonales } from '../models/datos-personales';
 import { Proyecto } from '../models/proyecto';
+
+// 2. ¡IMPORTANTE! Importamos el archivo de entorno
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PortfolioService {
 
-  // 2. Definimos las rutas a tus archivos JSON
-  private urlDatosPersonales: string = 'assets/datos-personales.json';
-  private urlProyectos: string = 'assets/proyectos.json';
+  // 3. las urls vienen de environment.ts
 
-  // 3. Inyectamos HttpClient para poder usarlo [cite: 1056]
+  // 4. Inyectamos HttpClient
   constructor(private http: HttpClient) { }
 
-  // 4. Método para obtener los datos personales
-  // Devuelve un Observable [cite: 1058]
+  // 5. Método para obtener los datos personales
   public getDatosPersonales(): Observable<DatosPersonales> {
-    return this.http.get<DatosPersonales>(this.urlDatosPersonales);
+    // Usamos la variable de 'environment'
+    return this.http.get<DatosPersonales>(environment.datosPersonalesUrl);
   }
 
-  // 5. Método para obtener la lista de proyectos
+  // 6. Método para obtener la lista de proyectos
   public getProyectos(): Observable<Proyecto[]> {
-    return this.http.get<Proyecto[]>(this.urlProyectos);
+    // Usamos la variable de 'environment'
+    return this.http.get<Proyecto[]>(environment.proyectosUrl);
   }
 }

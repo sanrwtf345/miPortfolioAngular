@@ -1,6 +1,5 @@
 export const environment = {
   production: false,
-
-  datosPersonalesUrl: 'datos-personales.json',
-  proyectosUrl: 'proyectos.json'
+  datosPersonalesUrl: 'assets/datos-personales.json',
+  proyectosUrl: 'assets/proyectos.json'
 };

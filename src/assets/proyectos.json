@@ -11,7 +11,7 @@
 },
   {
     "id": 2,
-    "nombre": "Portfolio Angular",
+    "proyecto": "Portfolio Angualar",
     "descripcion": "Sitio web personal desarrollado con Angular 20.",
     "tecnologias": ["Angular", "TypeScript"],
     "linkRepositorio": "https://github.com/sanrwtf345/miPortfolioAngular.git",
